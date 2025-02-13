@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Not A Virus",
+  "version": "1.0",
+  "description": "Definitely not a virus",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
