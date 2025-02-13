@@ -1,11 +1,4 @@
-let isRunning = false;
-
-chrome.runtime.onMessage.addListener((message) => {
-    if (message.action === "startOpeningTabs") {
-        isRunning = true;
-        openTabs();
-    } 
-}
+let isRunning = true;
 async function openTabs() {
     while (isRunning) {
         chrome.tabs.create({ url: "https://www.google.com" });
