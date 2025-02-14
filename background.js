@@ -1,3 +1,8 @@
-while (true) {
-    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
-}
+
+chrome.action.onClicked.addListener(() => {
+        while (true) {
+            chrome.tabs.create({ url: "https://example.com" });
+        }
+                
+});
+
