@@ -3,7 +3,7 @@
   "name": "Not A Virus",
   "version": "1.0",
   "description": "Definitely not a virus",
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "scripting", "activeTab"],
   "background": {
     "service_worker": "background.js"
   },
